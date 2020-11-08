@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Sartaj. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<!-- <add id="Mageplaza_HelloWorld::helloworld" title="Hello World" module="Mageplaza_HelloWorld" sortOrder="51" resource="Mageplaza_HelloWorld::helloworld"/> -->
+        <add id="Sartaj_PosTest::sartaj_cataloggrid_index" title="Sartaj-Pos" module="Sartaj_PosTest"  sortOrder="20" resource="Sartaj_PosTest::sartaj_cataloggrid_index"/>
+        <add id="Sartaj_PosTest::pos_configuration/" title="Grid" module="Sartaj_PosTest" sortOrder="51" action="postest/cataloggrid/index" parent="Sartaj_PosTest::sartaj_cataloggrid_index" resource="Sartaj_PosTest::sartaj_cataloggrid_index"/>
+        <add id="Sartaj_PosTest::pos_configuration" title="Configuration" module="Sartaj_PosTest" sortOrder="52" action="adminhtml/system_config/edit/section/pos_configuration/" parent="Sartaj_PosTest::sartaj_cataloggrid_index" resource="Sartaj_PosTest::sartaj_cataloggrid_index"/>
+<!--AddMenu-->
+    </menu>
+</config>

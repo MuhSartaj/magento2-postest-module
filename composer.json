@@ -1,0 +1,28 @@
+{
+  "name": "sartaj/module-pos-api",
+  "description": "A Magento 2 module that helps importing catalog from Pos API",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "require": {
+    "php": "~7.2.0||~7.3.0",
+    "magento/framework": "~100.0.4"
+  },
+  "authors": [
+    {
+      "name": "M. Sartaj Aalam",
+      "email": "muhammadsartajaalam@gmail.com",
+      "homepage": "NA",
+      "role": "Lead developer"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Sartaj\\PosTest\\": ""
+    }
+  }
+}
